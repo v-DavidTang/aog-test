@@ -12,7 +12,7 @@
 CRON 表达式由 6 个字段组成：`{second} {minute} {hour} {day} {month} {day of the week}`。
 例如，若要每 15 分钟触发一次 WebJob，settings.job 需要：
 
-```json
+```
 json
 {
     "schedule": "0 */15 * * * *"
