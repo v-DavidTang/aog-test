@@ -8,7 +8,7 @@
 
 跨订阅 Link VNET 到 ER 时报错如下：
 
-![powershell-link-vnet-er](./media/aog-vnet-qa-expressroute-cannot-parse-request/powershell-link-vnet-er.png)
+![powershell-link-vnet-er](./media/aog-virtual-network-qa-expressroute-cannot-parse-request/powershell-link-vnet-er.png)
 
 	PS C:\Users\crane> New-AzureRmVirtualNetworkGatewayConnection -Name ERConnection -ResourceGroupName craneARMERtest -Location "China East" -VirtualNetworkGateway1 $gw -PeerId $id -ConnectionType ExpressRoute -AuthorizationKey "d3d7375f-aa95-4a97-97bf-cd4a68278189" 
 	WARNING: The output object type of this cmdlet will be modified in a future release.
