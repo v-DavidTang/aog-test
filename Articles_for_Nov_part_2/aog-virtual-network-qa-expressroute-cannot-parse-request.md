@@ -8,7 +8,7 @@
 
 跨订阅 Link VNET 到 ER 时报错如下：
 
-![powershell-link-vnet-er](./media/aog-vnet-troubleshoot-er-cannot-parse-request/powershell-link-vnet-er.png)
+![powershell-link-vnet-er](./media/aog-vnet-troubleshoot-expressroute-cannot-parse-request/powershell-link-vnet-er.png)
 
 	PS C:\Users\crane> New-AzureRmVirtualNetworkGatewayConnection -Name ERConnection -ResourceGroupName craneARMERtest -Location "China East" -VirtualNetworkGateway1 $gw -PeerId $id -ConnectionType ExpressRoute -AuthorizationKey "d3d7375f-aa95-4a97-97bf-cd4a68278189" 
 	WARNING: The output object type of this cmdlet will be modified in a future release.
@@ -53,16 +53,18 @@
 	New-AzureRmVirtualNetworkGatewayConnection -Name ERConnection -ResourceGroupName craneARMERtest -Location "China East" -VirtualNetworkGateway1 $gw -PeerId $ID -ConnectionType ExpressRoute -AuthorizationKey "d3d7375f-aa95-4a97-97bf-cd4a68278189" 
 
 > 注意：
-> 在（`Get-AzureRmExpressRouteCircuit -Name "21VDemoSH" -ResourceGroupName "CraneER"`）的输出中会有如下两个参数：
-> `id` 及 `Authorizations.id`
-此处我们需要给 $ID 赋值的参数是 .id，而不是 Authorizations.id。
-> 
+
 > `$ID=(Get-AzureRmExpressRouteCircuit -Name "21VDemoSH" -ResourceGroupName "CraneER").id`
 > 即：`"/subscriptions/8775dxxxxxxxxxxxxxxxxxxxxxxxxx518/resourceGroups/CraneER/providers/Microsoft.Network/expressRouteCircuits/21VDemoSH"`
 > 
 > 而不是：
 `$ID=(Get-AzureRmExpressRouteCircuit -Name "21VDemoSH" -ResourceGroupName "CraneER").Authorizations.id`
 即：`"/subscriptions/8775dxxxxxxxxxxxxxxxxxxxxxxxxx518/resourceGroups/CraneER/providers/Microsoft.Network/expressRouteCircuits/21VDemoSH/authorizations/MyAuthorization"`
+
+“Cannot parse the request”， 该错误的原因是因为 `$ID` 赋错值了。在（`Get-AzureRmExpressRouteCircuit -Name "21VDemoSH" -ResourceGroupName "CraneER"`）的输出中会有如下两个参数：
+ `id` 及 `Authorizations.id` 。
+此处需要给 `$ID` 赋值的参数是 `.id`，而不是 `Authorizations.id`，至此问题即可解决。
+
 
 ### 其它资源 ###
 
