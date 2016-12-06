@@ -22,7 +22,6 @@
 如果您是使用 C# 做开发，可以通过以下方法生成 SAS Token:
 
 ```C#
-
 class SASTokenGenerator
 {
 	public static string GetSASToken(string resourceUri, string keyName, string key, TimeSpan ttl)
@@ -43,7 +42,6 @@ class SASTokenGenerator
     	return Convert.ToString((int)expirySinceEpoch.TotalSeconds);
     }
 }
-
 ```
 
 
