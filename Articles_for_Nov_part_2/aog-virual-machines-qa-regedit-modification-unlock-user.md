@@ -4,7 +4,7 @@
 >/.# 如何通过修改注册表的方式解锁被锁定的用户 #
 
 ### 问题描述 ###
-<style type="text/css">>
+<style type="text/css">
 img {
     float: right;
 }
