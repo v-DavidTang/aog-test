@@ -1,8 +1,8 @@
-# 如何通过修改注册表的方式解锁被锁定的用户 #
+.# 如何通过修改注册表的方式解锁被锁定的用户 #
 
 ### 问题描述 ###
 
-![regedit](./media/aog-virual-machines-qa-regedit-modification-unlock-user/regedit.png)
+<img src="./media/aog-virual-machines-qa-regedit-modification-unlock-user/regedit.png" width="95" height="84" />
 <div style="float:left">为你和</div>
 
 在很多情况下, 由于意外操作或者本地安全组策略，将管理员或其他用户锁定， 导致无法正确访问 windows 虚拟机。
