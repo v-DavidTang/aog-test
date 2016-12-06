@@ -3,7 +3,7 @@
 
 ### 问题描述 ###
 <p>
-<img src="./media/aog-virual-machines-qa-regedit-modification-unlock-user/regedit.png" width="95" height="84" style="float:left"/>
+<img src="./media/aog-virual-machines-qa-regedit-modification-unlock-user/regedit.png" width="95" height="84" style="float:right"/>
 This is some text. This is some text. This is some text.
 This is some text. This is some text. This is some text.
 This is some text. This is some text. This is some text.
