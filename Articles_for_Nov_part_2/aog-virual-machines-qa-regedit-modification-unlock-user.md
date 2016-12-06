@@ -1,10 +1,10 @@
-
+ type="text/css">
 
 
 >/.# 如何通过修改注册表的方式解锁被锁定的用户 #
 
 ### 问题描述 ###
-<style>
+<style type="text/css">>
 img {
     float: right;
 }
