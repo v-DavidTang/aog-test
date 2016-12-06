@@ -1,4 +1,4 @@
-# 如何通过修改注册表的方式解锁被锁定的用户 #
+/# 如何通过修改注册表的方式解锁被锁定的用户 #
 
 ### 问题描述 ###
 <style type="text/css">
@@ -8,6 +8,7 @@ img {
 </style>
 <p>
 <img src="./media/aog-virual-machines-qa-regedit-modification-unlock-user/regedit.png" width="95" height="84" style="float:right"/>
+<div style="width:185px;margin-bottom:5px;float:left;">
 This is some text. This is some text. This is some text.
 This is some text. This is some text. This is some text.
 This is some text. This is some text. This is some text.
@@ -18,6 +19,7 @@ This is some text. This is some text. This is some text.
 This is some text. This is some text. This is some text.
 This is some text. This is some text. This is some text.
 This is some text. This is some text. This is some text.
+</div>
 </p>
 
 
