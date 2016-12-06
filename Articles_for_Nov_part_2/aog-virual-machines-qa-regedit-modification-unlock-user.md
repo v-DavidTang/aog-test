@@ -1,12 +1,6 @@
 /# 如何通过修改注册表的方式解锁被锁定的用户 #
 
 ### 问题描述 ###
-<style type="text/css">
-img {
-    float: right;
-}
-</style>
-<p>
 <img src="./media/aog-virual-machines-qa-regedit-modification-unlock-user/regedit.png" width="95" height="84" style="float:right"/>
 <div style="width:185px;margin-bottom:5px;float:left;">
 This is some text. This is some text. This is some text.
@@ -20,7 +14,6 @@ This is some text. This is some text. This is some text.
 This is some text. This is some text. This is some text.
 This is some text. This is some text. This is some text.
 </div>
-</p>
 
 
 在很多情况下, 由于意外操作或者本地安全组策略，将管理员或其他用户锁定， 导致无法正确访问 windows 虚拟机。
