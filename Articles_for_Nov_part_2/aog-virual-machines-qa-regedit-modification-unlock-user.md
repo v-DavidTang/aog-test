@@ -3,7 +3,7 @@
 ### 问题描述 ###
 
 ![regedit](./media/aog-virual-machines-qa-regedit-modification-unlock-user/regedit.png)
-<span float:left>为你和</span>
+<div float:left>为你和</div>
 
 在很多情况下, 由于意外操作或者本地安全组策略，将管理员或其他用户锁定， 导致无法正确访问 windows 虚拟机。
 
