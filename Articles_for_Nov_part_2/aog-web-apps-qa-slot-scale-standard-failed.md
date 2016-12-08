@@ -1,3 +1,18 @@
+<properties
+	pageTitle="含有部署槽的标准网站无法缩放到基本模式"
+	description="Web 应用删除部署槽后从标准模式缩放到基本模式"
+	services="Web-Apps"
+	documentationCenter=""
+	authors=""
+	manager=""
+	editor=""
+	tags="Azure,Web 应用,缩放,Portal"/>
+
+<tags
+    ms.service="Web-Apps-aog"
+    ms.date="12/08/2016"
+    wacn.date="12/08/2016"/>
+
 # 含有部署槽的标准网站无法缩放到基本模式 #
 
 ### 问题现象 ###
@@ -24,7 +39,7 @@
 
 	![step-2-add-slot](./media/aog-web-apps-qa-slot-scale-standard-failed/step-2-add-slot.png)
 
-3. 在 Web 应用列表处，选中选中相应槽，点击删除；
+3. 在 Web 应用列表处，选中相应槽，点击删除；
 
 	![step-3-delete-slot](./media/aog-web-apps-qa-slot-scale-standard-failed/step-3-delete-slot.png)
 

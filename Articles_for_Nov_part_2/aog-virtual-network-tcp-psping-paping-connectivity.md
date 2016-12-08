@@ -1,3 +1,18 @@
+<properties
+	pageTitle="使用 PsPing & PaPing 进行 TCP 端口连通性测试"
+	description="在 Windows 及 Linux 操作系统中分别使用 PsPing 和 PaPing 工具进行 TCP 端口连通性测试"
+	services="virtual-network"
+	documentationCenter=""
+	authors=""
+	manager=""
+	editor=""
+	tags="Azure,虚拟机,PSPing,PaPing,ping,IMCP"/>
+
+<tags
+    ms.service="virtual-network-aog"
+    ms.date="12/08/2016"
+    wacn.date="12/08/2016"/>
+
 # 使用 PsPing & PaPing 进行 TCP 端口连通性测试 #
 
 ### PsPing & PaPing 介绍 ###
@@ -94,7 +109,7 @@ PaPing 的使用方法与 PsPing 非常相似，甚至更简单，功能更单�
 	-t, --timeout	指定超时时长，单位为毫秒，默认值为 1000；
 	-c, --count N	指定测试次数。
 
-默认 PaPing 的结果会根据 Shell 的色彩配置输出不同颜色。如果您将结果通过“>”输出到文件，建议使用 `--ocolor` 参数。这样输出的文件中就不会包含色彩相关的字符，更方便后期处理。
+默认 PaPing 的结果会根据 Shell 的色彩配置输出不同颜色。如果您将结果通过“>”输出到文件，建议使用 `--nocolor` 参数。这样输出的文件中就不会包含色彩相关的字符，更方便后期处理。
 
 同样以测试 500 次对 `www.azure.cn` 的 80 端口的 TCP 连接为例，跳转到 PaPing 所在的路径后，执行 `./paping -p 80 -c 500 www.azure.cn`。
 	

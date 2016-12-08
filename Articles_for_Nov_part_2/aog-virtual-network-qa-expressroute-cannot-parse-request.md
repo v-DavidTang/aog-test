@@ -1,12 +1,27 @@
+<properties
+	pageTitle="将不同订阅中的虚拟网络连接到 ExpressRoute 线路时收到报错'Cannot parse the request'"
+	description="通过 PowerShell 将不同订阅中的虚拟网络连接到 ExpressRoute"
+	services="virtual-network"
+	documentationCenter=""
+	authors=""
+	manager=""
+	editor=""
+	tags="Azure,PowerShell,VNet,ExpressRoute,Subscriptions"/>
+
+<tags
+    ms.service="virtual-network-aog"
+    ms.date="12/08/2016"
+    wacn.date="12/08/2016"/>
+
 # 将不同订阅中的虚拟网络连接到 ExpressRoute 线路时收到报错“Cannot parse the request” #
 
 ### 问题描述 ###
 
-将不同订阅中的 VNET 连接到 ExpressRoute 线路时收到报错“Cannot parse the request” 
+将不同订阅中的 虚拟网络（VNET） 连接到 ExpressRoute 线路时收到报错“Cannot parse the request” 
 
 ### 问题现象 ###
 
-跨订阅 Link VNET 到 ER 时报错如下：
+跨订阅连接 VNET 到 ExpressRoute 时报错如下：
 
 ![powershell-link-vnet-er](./media/aog-virtual-network-qa-expressroute-cannot-parse-request/powershell-link-vnet-er.png)
 
@@ -24,7 +39,7 @@
 
 ### 解决方法 ###
 
-首先，需要了解跨订阅 Link VNET 到 ER 的操作过程：
+首先，需要了解跨订阅连接 VNET 到 ExpressRoute 的操作过程：
 
 **登录订阅**
 
