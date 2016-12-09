@@ -1,3 +1,4 @@
+
 <properties
 	pageTitle="如何通过修改注册表的方式解锁被锁定的用户"
 	description="通过修改注册表的方式修复意外操作导致用户的锁定"
@@ -27,6 +28,7 @@
 2. 将系统盘挂载到临时虚拟机,假定挂载点为临时虚拟机上的 F 盘；
 3. 以管理员身份登陆临时虚拟机；
 4. 打开注册表编辑器；
+
 	![regedit](./media/aog-virtual-machines-qa-regedit-modification-unlock-user/regedit.png)
 
 6. 选择 HKEY_USERS，然后点击左上角 FILE 菜单，选择 Load Hive；
