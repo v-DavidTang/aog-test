@@ -27,7 +27,6 @@
 2. 将系统盘挂载到临时虚拟机,假定挂载点为临时虚拟机上的 F 盘；
 3. 以管理员身份登陆临时虚拟机；
 4. 打开注册表编辑器；
-
 	![regedit](./media/aog-virtual-machines-qa-regedit-modification-unlock-user/regedit.png)
 
 6. 选择 HKEY_USERS，然后点击左上角 FILE 菜单，选择 Load Hive；
