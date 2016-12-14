@@ -27,7 +27,7 @@ Azure Active Directory (Azure AD) 是 Microsoft 提供的基于多租户云的�
 
 请参阅 [Azure 订阅与 Azure Active Directory 的关联方式](https://www.azure.cn/documentation/articles/active-directory-how-subscriptions-associated-directory/)。
 
->[AZURE.NOTE]<p>Azure 中国的 Azure AD 目前只支持全局管理员和用户；<p>Azure 中国的 Azure AD 不支持 Microsoft 账户用户。  
+>[AZURE.NOTE]<p>1. Azure 中国的 Azure AD 目前只支持全局管理员和用户；<p>2. Azure 中国的 Azure AD 不支持 Microsoft 账户用户。  
 
 ## Azure AD管理员与Azure订阅管理员的区别  
 
@@ -50,13 +50,13 @@ Azure AD 提供一组不同的管理角色，用于管理目录和标识相关�
 
 对于需要多个 Azure AD 目录相互关联的客户，我们建议部署的最佳实践如下：  
 
-1.	使用 admin@AAA.partner.onmschina.cn 账号在 Azure 传统管理门户中创建 BBB.partner.onmschina.cn 目录，这样可以让 admin@AAA.partner.onmschina.cn 被添加为 BBB.partner.onmschina.cn 目录的来宾账号。
-2.	为 BBB.partner.onmschina.cn 目录添加管理账号 admin@BBB.partner.onmschina.cn，需要注意这时 admin@BBB.partner.onmschina.cn 因为没有相应的订阅，无法成功登录传统管理门户。
-3.	使用 EA 门户，将 admin@BBB.partner.onmschina.cn 加到账号列表内，并为其购买订阅 BBB。
+1.	使用 `admin@AAA.partner.onmschina.cn` 账号在 Azure 传统管理门户中创建 `BBB.partner.onmschina.cn` 目录，这样可以让 `admin@AAA.partner.onmschina.cn` 被添加为 `BBB.partner.onmschina.cn` 目录的来宾账号。
+2.	为 `BBB.partner.onmschina.cn` 目录添加管理账号 `admin@BBB.partner.onmschina.cn`，需要注意这时 `admin@BBB.partner.onmschina.cn` 因为没有相应的订阅，无法成功登录传统管理门户。
+3.	使用 EA 门户，将 `admin@BBB.partner.onmschina.cn` 加到账号列表内，并为其购买订阅 BBB。
 
 ![Azure-AD-AAA-BBB-2](./media/aog-active-directory-subcription-limitation-practice/Azure-AD-AAA-BBB-2.png)
 
-通过以上步骤，可以使 AAA 与 BBB 目录分别拥有自己的管理账号和订阅。同时，由于 admin@AAA.partner.onmschina.cn 账号同时存在于 AAA 和 BBB 目录里，客户可以使用该账号将两个目录里的账号互相添加为来宾账号，由此达到多目录间相互关联的目的。
+通过以上步骤，可以使 AAA 与 BBB 目录分别拥有自己的管理账号和订阅。同时，由于 `admin@AAA.partner.onmschina.cn` 账号同时存在于 AAA 和 BBB 目录里，客户可以使用该账号将两个目录里的账号互相添加为来宾账号，由此达到多目录间相互关联的目的。
 
 ##相关信息  
 
