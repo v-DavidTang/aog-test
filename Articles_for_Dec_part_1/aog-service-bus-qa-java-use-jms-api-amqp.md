@@ -1,8 +1,23 @@
-# 使用 JAVA AMQP 协议如何订阅启用分区的 Topic 的消息  
+<properties
+                pageTitle="使用 JAVA AMQP 协议如何订阅启用分区功能的 Azure 服务总线主题的消息"
+                description="借助 Java JMS API 使用 AMQP 协议订阅启用分区的 Azure 服务总线主题的消息"
+                services="service-bus"
+                documentationCenter=""
+                authors=""
+                manager=""
+                editor=""
+                tags="JAVA,AMQP,Azure 服务总线，主题，队列，分区"/>
 
-## 问题：  
+<tags
+                ms.service="service-bus-aog"
+                ms.date="12/15/2016"
+                wacn.date="12/15/2016"/>
 
-通常借助 Java JMS  API 使用 AMQP 协议订阅启用分区的 Azure Service Bus Topic，会报错, 而订阅未启用分区功能的 Azure Service Bus Topic 就正常。  
+# 使用 JAVA AMQP 协议如何订阅启用分区功能的 Azure 服务总线主题的消息  
+
+## 问题描述：  
+
+通常借助 Java JMS API 使用 AMQP 协议订阅启用分区的 Azure 服务总线主题会报错, 而订阅未启用分区功能的  Azure 服务总线主题则可正常运行。  
 
 **报错信息为：**  
 
@@ -10,7 +25,7 @@
 
 ## 解决方法：  
 
-使用 Azure Service Bus Queue 订阅的方式订阅 Topic 消息，Topic 订阅者对应 queue 的 entity path 为  `[Topic Name]/Subscriptions/[Subscription Name]`
+使用 Azure 服务总线队列订阅的方式订阅主题消息，主题订阅者对应队列的 `entity path` 为  `[Topic Name]/Subscriptions/[Subscription Name]`。
 
 **代码如下：**  
 
@@ -24,11 +39,12 @@ connection.start();
 
 TopicSession session = (TopicSession) connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
 Topic topic = session.createTopic("test");
-// 对未启用partition的topic可以用TopicSubscriber订阅消息
+
+// 对未启用 partition 的 topic 可以用 TopicSubscriber 订阅消息
 // TopicSubscriber subscriber = session.createDurableSubscriber(topic, "subscription1");
 // subscriber.setMessageListener(new MessageListener());
 
-// 对启用partition的topic 只能用MessageConsumer来订阅消息
+// 对启用 partition的topic 只能用 MessageConsumer 来订阅消息
 MessageConsumer messageConsumer = session.createConsumer(session.createQueue("test/Subscriptions/sub1"));
 messageConsumer.setMessageListener(new MessageListener());
 
